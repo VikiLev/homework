@@ -1,0 +1,17 @@
+вариант1 ( как придумали с группой)  database a_level
+
+1)select name, groups, s_g, direction, name_t  from students left join s_to_g on (students.id = s_to_g.id) left join groups on (s_to
+
+
+2)mysql> create table alevel select name, groups, s_g, direction, name_t  from students left join s_to_g on (students.id = s_to_g.id) left join groups on (s_to_g.s_g = groups.id) left join directions on (g_id = directions.id) left join teachers on (directions.id = teachers.t_id);
+
+
+
+
+
+вариант2(как я вижу и как я захотела) database alevel
+
+1)mysql> select name, groups, direction, name_te from students left join groups on (students.sg_id = groups.id) left join directions on (directions.id = groups.g_s) left join teachers on (directions.id = teachers.t_d_id);
+
+
+2)mysql> create table level select name, groups, direction, name_te from students left join groups on (students.sg_id = groups.id) left join directions on (directions.id = groups.g_s) left join teachers on (directions.id = teachers.t_d_id);
