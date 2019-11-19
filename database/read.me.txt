@@ -15,3 +15,5 @@
 
 
 2)mysql> create table level select name, groups, direction, name_te from students left join groups on (students.sg_id = groups.id) left join directions on (directions.id = groups.g_s) left join teachers on (directions.id = teachers.t_d_id);
+
+ 3) select students.id, name, groups, direction, name_te from students left join groups on (students.sg_id = groups.id) left join directions on (directions.id = groups.g_s) left join teachers on (directions.id = teachers.t_d_id) order by students.id;
