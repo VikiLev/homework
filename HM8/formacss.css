@@ -1,0 +1,26 @@
+.container{
+	width: 400px;
+	height: 350px;
+	background-color: #27262e;
+	margin: 100px auto 0 auto;
+	text-align: center;
+
+}
+
+input[type="text"], input[type="password"], input[type="card"],input[type="nomber"]{
+width: 300px;
+height: 30px;
+font-size: 20px;
+text-align: center;
+color: #03fcc6;
+background-color: #1f1c33;
+}
+
+
+input[type="submit"]{
+
+color: #03fcc6;
+background-color: #0742e6;
+width: 300px;
+height: 30px;
+}
