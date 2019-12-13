@@ -1,13 +1,15 @@
-    <?php
+    
+        
+       <?php
 
 
-    interface Canwrite
+    interface  office_tools
     {
-        public function canwrite();
+        public function office_tools();
     }
 
 
-    abstract class Stationery implements Canwrite
+    abstract class Stationery implements office_tools
     {
         public $name;
         public $color;
@@ -24,7 +26,7 @@
 
     class Pen extends Stationery
     {
-        public function Canwrite()
+        public function office_tools()
         {
            echo 'New Pen added.' . PHP_EOL;
         }
@@ -37,27 +39,26 @@
 
     }
 
-    class feather extends Pen
+    class pensil extends Stationery
     {
-        public function Canwrite()
-        {
-            echo 'New feather added.' . PHP_EOL;
-        }
-    }
-
-    class pensil extends Pen
-    {
-        public function Canwrite()
+        public function office_tools()
         {
             echo 'New pensil added.' . PHP_EOL;
         }
+        public function newStationery()
+        {
+            return 'It is ' . $this->name .  ',color is - '
+                . $this->color . PHP_EOL;
+        }
+
     }
 
+
     $pen = new pen('pen', 'blue');
-    $feather = new feather('feather','black');
     $pensil = new pensil('pensil', 'gray');
 
 
-    echo $pen->canwrite() . $pen->newStationery();
-    echo $pensil->canwrite() . $pensil->newStationery();
-    echo $feather->canwrite() . $feather->newStationery();
+    echo $pen->office_tools() . $pen->newStationery();
+    echo $pensil->office_tools() . $pensil->newStationery();
+
+    
