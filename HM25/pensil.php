@@ -1,12 +1,11 @@
 <?php
 
-class pen extends Stationery
+class pensil extends Stationery
     {
         public function office_tools()
         {
-           echo 'New Pen added.' . PHP_EOL;
+            echo 'New pensil added.' . PHP_EOL;
         }
-
         public function newStationery()
         {
             return 'It is ' . $this->name .  ',color is - '

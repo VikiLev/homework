@@ -8,7 +8,7 @@ spl_autoload_register(function ($class_name) {
 //include '1.php';
 //include '2.php';
 //include '3.php';
-//include '4';
+//include '4.php';
 
 
 $pen = new pen('pen', 'blue');
