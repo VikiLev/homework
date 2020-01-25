@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+
+ <script type="text/javascript">
+
+    // let a = 5; let b = a + 5;
+    // console.log(a,b)
+
+ 	// Number: age
+ 	// let x = Number(prompt("Сколько вам исполнится  лет в этом году?", ""));
+ 	// result = 2020 - x;
+  //   alert(result);
+
+    // Number: temperature; Цельсий х 1,8 + 32 = Фаренгейт
+  //   let y = Number(prompt("Сколько градусов?", ""));
+ 	// res = y*1.8 +32;
+  //   alert(res);
+
+    // Number: divide
+  //   let a = Number(prompt("ВВедите число", ""));
+  //   let b = Number(prompt("ВВедите  второе число", ""));
+ 	// let del = Math.floor(a/b);
+  //   alert(del);
+
+
+  // Number: odd
+  // 	let n = Number(prompt("Введите число", ""));
+ 	// if (isNaN(n) === true) {
+  //   alert("Это не число")
+	// }
+  // 	if (n % 2 == 0){
+  // 	alert("Это число четное");
+  // 	}
+  //  	else { alert("Это число нечетное");
+  // 	};
+
+
+ // greeting
+//  let a = prompt("Вaше имя", "");
+ 
+//  function greeting(){
+//  	alert("Привет, " + a)
+
+//     }
+//     greeting(a);
+// 
+
+// String: lexics
+// let text = prompt("Текст", "");
+// document.write(text);
+// let result = text.indexOf('Привет');
+// document.write("повтор" + result);
+
+// confirm, Boolean
+// let yang;
+// let x;
+// let old = confirm("Вам есть 18?");
+// if (old === true){
+//   alert ("Сейчас продолжим")
+// }
+// else {(yang =  prompt("Сколько тебе лет"))
+// x = 18-yang;
+// alert ("Приходи через " + x + " года")};
+
+
+// Array: booleans
+// let arr = [];
+// arr.push(old,yang,x);
+// console.log(arr)
+
+
+// Array: plus/ plus string
+// Напишите код, который складывает первые два элемента массива и заносит это в элемент с индексом 2. Исследуйте полученный массив.
+// let arr = [2, 2, 3, 4, 5]
+// let arr3 = arr[0]+arr[1];
+// arr[2] = arr3;
+// console.log(arr)
+
+// let arr = ["heloo", "word"]
+// let arr3 = arr[0]+arr[1];
+// arr[2] = arr3;
+// console.log(arr)
+
+// Object: real
+// let marker = {
+//     color: "red",
+//     thickness: "fat"
+// }
+// console.log(marker)
+// marker.color = "blue";
+// marker.thickness = "notfat"
+// console.log(marker)
+
+
+// var age = +prompt("Сколько вам лет?","");
+// if (age > 0 && age < 18){
+//     alert("школьник");
+// }
+// else if (age < 0){
+//     alert("зародышь?");
+// }
+// else if (age > 18 && age < 30){
+//     alert("молодеж");
+// }
+// else if (age > 30 && age < 45){
+//     alert("зрелость");
+// }
+// else if (age > 45 && age < 60){
+//     alert("закат");
+// }
+// else if (age > 60){
+//     alert("как пенсия?");
+// }
+// else {
+//     alert("то ли киборг, то ли ошибка"); 
+// }
+
+
+
+// Ternary
+// Спросите у пользователя пол (confirm). Выведите с помощью alert "Вы мужчина" или "Вы женщина". Сделайте это оператором alert. Используйте тернарный оператор.
+
+// let sex = prompt("Ваш пол женский или мужской? ")
+// sex == "женский"? alert ("ВЫ - женщина!"): alert ("ВЫ - мужчина")
+
+
+// let sex = confirm("Вы женщина?")
+// sex == true? alert ("ВЫ - женщина!"): alert ("ВЫ - мужчина")
+
+
+
+// Синий пояс Number: flats
+// Сделайте калькулятор, который позволит вам исходя из информации о количества этажей в доме и количества квартир на этаже находить подъезд и этаж определенной квартиры по её номеру. Например для 9этажного дома по 4 квартиры на этаж 81 квартира находится на 3м этаже третьего подъезда.
+
+
+let apartment_number = Number(prompt("ВВедите номер квартиры"));// ввод с консоли номер квартиры
+
+
+let floors_house = 5;// кол-во этажей (берем стандартную пятиэтажку)
+let floors_apartment = 4;//кол-во квартир на этаже
+
+let front_door = floors_house*floors_apartment;// кол-во квартив в подьезде
+
+let number_front_door = Math.ceil((apartment_number / front_door));// номер подьезда
+
+console.log ("Подьезд " + number_front_door);
+
+number_floors = Math.ceil((front_door + apartment_number - (number_front_door * front_door))/floors_apartment);
+
+console.log ("Этаж" + number_floors);
+
+
+
+
+
+
+    
+</script>
+</html>
+
