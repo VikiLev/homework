@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+// switch: if
+        // let color = prompt("Введите цвет","");
+// switch (color){
+//     case "red": document.write("<div style='background-color: red;'>красный</div>");
+//     case "black": document.write("<div style='background-color: black; color: white;'>черный</div>");
+//                 break;
+//     case "blue": document.write("<div style='background-color: blue;'>синий</div>");
+//     case "green": document.write("<div style='background-color: green;'>зеленый</div>");
+//                 break;
+//     default: document.write("<div style='background-color: gray;'>Я не понял</div>");
+// }
+
+// if (color == "red"){document.write("<div style='background-color: red;'>красный</div>");
+// document.write("<div style='background-color: black; color: white;'>черный</div>");
+// }
+// else if (color == "black"){document.write("<div style='background-color: black; color: white;'>черный</div>")}
+// else if (color == "blue"){document.write("<div style='background-color: blue;'>синий</div>");
+// document.write("<div style='background-color: green;'>зеленый</div>")
+// }
+// else if (color == "green"){document.write("<div style='background-color: green;'>зеленый</div>")}
+// else document.write("<div style='background-color: gray;'>Я не понял</div>");
+
+
+// prompt: or
+    // let x = Number(prompt("Сколько вам исполнится  лет в этом году?", ""));
+    // if (x == false || x == 0) {alert("Error")}
+    // else {
+    //     result = 2020 - x;
+    // alert(result)}
+
+
+//     confirm: or this days
+// let shop = confirm("Шопиться?");
+// if (shop === true){
+// (document.location = "https://rozetka.com.ua")
+// }
+// else {alert ("лентяй")}
+
+// let shop = confirm("Шопиться?");
+// (shop === true)?(document.location = "https://rozetka.com.ua"):alert ("лентяй");
+
+// triple prompt
+// Трижды вызывать prompt, сохранить в переменные фамилию, имя и отчество. Вывести ФИО c помощью alert. 
+// let name = prompt("Введите имя");
+// let name2 = prompt("Введите фамилию");
+// let name3 = prompt("Введите отчество");
+// alert(name +" " +  name2 + " " + name3);
+
+// default: or
+// Используя ИЛИ || добавьте имена по умолчанию, которые будут сохраняться во внутренних переменных если пользователь ввел пустую строку или нажал "Отмена". Например, если вы на шаге ввода Фамилии нажмете Escape, фамилия будет "Иванов"
+// let name = prompt("Введите имя") || "Ivan";
+// let name2 = prompt("Введите фамилию") || "Ivan";
+// let name3 = prompt("Введите отчество") || "Ivan";
+// alert(name +" " +  name2 + " " + name3);
+
+
+// let name = (prompt("Введите имя", ''));
+// let name2 = (prompt("Введите фамилию", ''));
+// let name3 = (prompt("Введите отчество", ''));
+// if (!name) name = "Ivan";
+// if (!name2) name2 = "Ivan2"
+// if (!name3) name3 = "Ivan3"
+// alert(name +" " +  name2 + " " + name3);
+
+
+
+// currency calc?? currency calc: two rates
+// Калькулятор обмена валют. Первый prompt спрашивает валюту: "usd" или "eur". С помощью switch установите обменный курс для валюты, выбранной пользователем, после чего спросите величину и переведите её из гривны в выбранную на первом prompt валюту. Выведите результат в alert()
+
+// let val = (prompt("Введите валюту", ''));
+// let summa = Number(prompt("Введите сумму в грн"))
+
+
+// switch (val.toLowerCase()){
+//     case "usd": alert("Сумма в USD " + summa/24);
+//     break;
+//     case "eur": alert("Сумма в EUR " + summa/28);
+//     break;
+//     default: alert("Нет такой валюты");
+//     break;
+// }
+
+// let shop = confirm("Купить валюту");
+// let val = prompt("Введите валюту");
+// let sum = prompt("Введите сумму");
+
+// switch (val.toLowerCase()){
+//     case "usd": alert((shop)? sum*20: sum*30);
+//     break;
+//     case "eur": alert((shop)? sum*28: sum*28);
+//     break;
+//     default: alert("Нет такой валюты");
+//     break;
+// }
+
+// Сделайте игру "камень-ножницы-бумага". Пользователь вводит свой вариант через prompt, программа генерирует свой вариант через Math.random() и выводит через alert. Следующий alert выводит имя победителя или "ничья"
+
+
+// let rand = Math.random();
+// if (rand < 0.34) rand = "камень";
+// else if (rand <=0.67) rand = "ножници"
+// else rand = "бумага"
+
+// let user = prompt("Введите камень,ножницы или бумага");
+// document.write("Ваш выбор " + user + "Выбор комп " + rand  )
+
+// if (rand === user){ alert("Ничья")}
+// else if (user === "камень" && rand === "ножници") {alert("ВЫ выиграли")}
+// else if (user === "камень" && rand === "бумага") {alert("ВЫ проиграли")}
+
+// else if (user === "бумага" && rand === "ножници") {alert("ВЫ проиграли")}
+// else if (user === "бумага" && rand === "камень") {alert("ВЫ выиграли")}
+
+// else if (user === "ножницы" && rand === "бумага") {alert("ВЫ выиграли")}
+// else if (user === "ножницы" && rand === "камень") {alert("ВЫ проиграли")}
+
+
+
+// Сделать задания обмена валют используя ассоциативный массив (объект) подобной структуры. Добавьте дополнительные поля при надобности. Для обращения к нужному полю используйте [].
+// let shop = confirm("Покупка продажа?");
+// let val = prompt("USD ИЛИ EUR");
+// let sum = +prompt("Введите сумму");
+//  const rates = {
+//          usd: "24",
+//          saleUsd:"23",
+//          eur: "28",
+//         saleEur: "27",
+//  }
+//     if(wat === true && val === "usd" ){
+//         alert(sum * rates[usd])
+//     }
+//     if(wat === false && val === "usd") {
+//         alert(sum * rates[saleUsd])
+//     }
+//     if(wat === true && val === "eur" ){
+//     alert(sum * rates[eur])
+//     }
+//     if(wat === false && val === "eur") {
+//     alert(sum * rates[saleEur])
+// }
+   
+
+
+
+    </script>
+</body>
+</html>
