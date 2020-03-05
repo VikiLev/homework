@@ -26,9 +26,7 @@ class Post extends Template
 
     public function getPost()
     {
-        $searchCriteria = $this->searchCriteriaBuilder
-            ->addFilter('enabled', true, 'eq')
-            ->create();
+        $searchCriteria = $this->searchCriteriaBuilder->create();
 
         $searchResult = $this->postRepository->getList($searchCriteria);
 

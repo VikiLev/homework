@@ -14,7 +14,7 @@ class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 
     protected function _construct()
     {
-        $this->_init('dragun_wraitdb_post', 'post_id');
+        $this->_init('Vika_table', 'post_id');
     }
 
 }

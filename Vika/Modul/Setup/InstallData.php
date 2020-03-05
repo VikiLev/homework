@@ -32,7 +32,7 @@ class InstallData implements InstallDataInterface
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
         $transactionModel = $this->transactionFactory->create();
-        
+
             $post = $this->postFactory->create();
             $post->setName('Vika');
             $post->setEmail('@mail.com');

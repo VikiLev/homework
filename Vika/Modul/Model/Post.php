@@ -2,11 +2,11 @@
 namespace Vika\Modul\Model;
 class Post extends \Magento\Framework\Model\AbstractModel implements \Magento\Framework\DataObject\IdentityInterface
 {
-    const CACHE_TAG = 'dragun_wraitdb_post';
+    const CACHE_TAG = 'Vika_table';
 
-    protected $_cacheTag = 'dragun_wraitdb_post';
+    protected $_cacheTag = 'Vika_table';
 
-    protected $_eventPrefix = 'dragun_wraitdb_post';
+    protected $_eventPrefix = 'Vika_table';
 
     protected function _construct()
     {
